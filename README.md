@@ -172,3 +172,42 @@ Output is saved to `results/evaluation_results.csv`.
 - `gateway_config.yaml` thresholds are defined but currently hardcoded in the policy engine
 
 ---
+
+## 🛠️ Installation & Setup
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/yourusername/llm-security-gateway-final.git
+cd llm-security-gateway-final
+```
+
+**2. Create a virtual environment**
+```bash
+python -m venv env
+```
+
+**3. Activate the virtual environment**
+```bash
+# Windows
+.\env\Scripts\activate
+
+# macOS / Linux
+source env/bin/activate
+```
+
+**4. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**5. Download the spaCy language model (required for Presidio)**
+```bash
+python -m spacy download en_core_web_lg
+```
+
+**6. Run the application**
+```bash
+python app/main.py
+```
+
+**7. Open in browser**
