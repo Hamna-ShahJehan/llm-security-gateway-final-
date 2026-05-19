@@ -146,25 +146,6 @@ Output is saved to `results/evaluation_results.csv`.
 
 ---
 
-## 📉 Evaluation Results (150-row dataset)
-
-| Metric | Rule-Only Baseline | Hybrid (Final) |
-|---|---|---|
-| Accuracy | 61.3% | **73.3%** |
-| Precision | 89.7% | **89.7%** |
-| Recall | 42.6% | **64.9%** |
-| F1-Score | 57.9% | **75.3%** |
-| False Negatives | 54 | **33** |
-
-**Per-category recall highlights:**
-- Benign prompts: 100% (no false positives on safe input)
-- Direct injection: 91%
-- Multilingual attacks: 77%
-- Obfuscated attacks: 82%
-- Paraphrased attacks: 28% ← primary gap (see Limitations)
-
----
-
 ## ⚠️ Limitations
 
 - Paraphrase recall is only 28% — TF-IDF lacks semantic generalisation for novel phrasings
