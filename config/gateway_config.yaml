@@ -1,5 +1,3 @@
-# LLM Security Gateway - Configuration File
-# Place this in: config/gateway_config.yaml
 policy:
   # Final risk threshold for BLOCK decision
   block_threshold: 0.65
